@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RobinCine Premium</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="https://realfavicongenerator.net/_next/image?url=%2Fassets%2Fimages%2Flogo.png&w=48&q=75"> 
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#e11d48',
+            secondary: '#4f46e5',
+          },
+          borderRadius: {
+            button: '8px',
+          },
+        },
+      },
+    };
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #0f172a;
+      color: #f8fafc;
+    }
+    .movie-card {
+      transition: all 0.3s ease;
+      overflow: hidden;
+      position: relative;
+    }
+    .movie-card:hover {
+      transform: scale(1.03);
+    }
+    .movie-overlay {
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.6));
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 1rem;
+    }
+    .movie-card:hover .movie-overlay {
+      opacity: 1;
+    }
+    .play-button {
+      transition: all 0.2s ease;
+    }
+    .play-button:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="min-h-screen flex flex-col">
+    <!-- Navbar sin buscador -->
+    <nav class="bg-gray-900 py-4 px-6 shadow-lg">
+      <div class="flex justify-between items-center">
+        <a href="#" class="text-3xl font-['Pacifico'] text-primary">RobinCine Premium</a>
+      </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="flex-grow container mx-auto px-4 sm:px-6 py-8">
+      <h1 class="text-3xl font-bold mb-2">Películas Recomendadas 🍿</h1>
+      <p class="text-gray-400 mb-8">Disfruta de mi selección de 10 películas que no te puedes perder</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+<div class="movie-card rounded-lg shadow-lg bg-gray-800 overflow-hidden">
+<div class="relative h-64">
+<img src="https://pics.filmaffinity.com/heretic-158529513-mmed.jpg" alt="Heretic (Hereje)" class="w-full h-full object-cover object-top">
+<div class="movie-overlay absolute inset-0">
+<h3 class="text-xl font-bold mb-1">Heretic (Hereje)</h3>
+<div class="flex items-center mb-1">
+<span class="text-sm mr-2">2025</span>
+<span class="text-xs px-2 py-1 bg-primary !rounded-button">Suspense</span>
+</div>
+<div class="flex items-center mb-2">
+<div class="flex mr-2">
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+</div>
+<span class="text-sm">9.5</span>
+</div>
+<p class="text-xs text-gray-300 mb-3">Dos jóvenes misioneras se ven obligadas a demostrar su fe cuando llaman a la puerta equivocada y son recibidas por el Sr. Reed. Los tres se verán envueltos en un brutal juego del gato y el ratón.</p>
+<a href="https://mega.nz/file/ap4DWJ4K#AjnYJCFw4QTB8IHfQqhZMzi-m0Cpn9Ufh_uvi9i5lNE" class="play-button flex items-center justify-center bg-primary text-white py-2 !rounded-button whitespace-nowrap">
+<i class="ri-play-fill mr-1"></i> Reproducir
+</a>
+</div>
+</div>
+</div>
+<div class="movie-card rounded-lg shadow-lg bg-gray-800 overflow-hidden">
+<div class="relative h-64">
+<img src="https://pics.filmaffinity.com/El_abismo_secreto-491076315-large.jpg" alt="El abismo secreto" class="w-full h-full object-cover object-top">
+<div class="movie-overlay absolute inset-0">
+<h3 class="text-xl font-bold mb-1">El abismo secreto</h3>
+<div class="flex items-center mb-1">
+<span class="text-sm mr-2">2025</span>
+<span class="text-xs px-2 py-1 bg-primary !rounded-button"> Thriller. Fantástico </span>
+</div>
+<div class="flex items-center mb-2">
+<div class="flex mr-2">
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-line text-yellow-400"></i>
+</div>
+<span class="text-sm">8.2</span>
+</div>
+<p class="text-xs text-gray-300 mb-3">Dos agentes bien cualificados reciben la misión de ocupar posiciones en un gran desfiladero de alto secreto que protege el mundo de la maldad desconocida y misteriosa que habita en su interior.</p>
+<a href="https://mega.nz/file/j9oySDJD#fvozyYpGulZdmItcp1vDOQLchTMoWtoDEIBoLgr6XSQ" class="play-button flex items-center justify-center bg-primary text-white py-2 !rounded-button whitespace-nowrap">
+<i class="ri-play-fill mr-1"></i> Reproducir
+</a>
+</div>
+</div>
+</div>
+<div class="movie-card rounded-lg shadow-lg bg-gray-800 overflow-hidden">
+<div class="relative h-64">
+<img src="https://pics.filmaffinity.com/house_of_spoils-456544492-mmed.jpg" alt="La casa de los susurros" class="w-full h-full object-cover object-top">
+<div class="movie-overlay absolute inset-0">
+<h3 class="text-xl font-bold mb-1">La casa de los susurros</h3>
+<div class="flex items-center mb-1">
+<span class="text-sm mr-2">2024</span>
+<span class="text-xs px-2 py-1 bg-primary !rounded-button">Suspense</span>
+</div>
+<div class="flex items-center mb-2">
+<div class="flex mr-2">
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-line text-yellow-400"></i>
+</div>
+<span class="text-sm">7.9</span>
+</div>
+<p class="text-xs text-gray-300 mb-3">Una chef abre su primer restaurante. Allí se enfrentará al caos en la cocina, a un inversionista dudoso y a las dudas sobre sí misma. Aunque la presión aumenta gracias al anterior dueño del local que amenaza con sabotearla.</p>
+<a href="https://mega.nz/file/TgJlDJbY#FZU3T9wCvy2Al2n-r_qMyGA7MtbQS7wjBXBJeoSpkco" class="play-button flex items-center justify-center bg-primary text-white py-2 !rounded-button whitespace-nowrap">
+<i class="ri-play-fill mr-1"></i> Reproducir
+</a>
+</div>
+</div>
+</div>
+<div class="movie-card rounded-lg shadow-lg bg-gray-800 overflow-hidden">
+<div class="relative h-64">
+<img src="https://pics.filmaffinity.com/mickey_17-530854063-mmed.jpg" alt="Mickey 17" class="w-full h-full object-cover object-top">
+<div class="movie-overlay absolute inset-0">
+<h3 class="text-xl font-bold mb-1">Mickey 17</h3>
+<div class="flex items-center mb-1">
+<span class="text-sm mr-2">2025</span>
+<span class="text-xs px-2 py-1 bg-primary !rounded-button">Ciencia ficción. Comedia.</span>
+</div>
+<div class="flex items-center mb-2">
+<div class="flex mr-2">
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-half-fill text-yellow-400"></i>
+<i class="ri-star-line text-yellow-400"></i>
+</div>
+<span class="text-sm">7.5</span>
+</div>
+<p class="text-xs text-gray-300 mb-3">Mickey 17, un miembro de la tripulación prescindible enviado a un planeta helado para colonizarlo, se niega a dejar que su clon de reemplazo, Mickey 18, tome su lugar. Adaptación del libro original de Edward Ashton</p>
+<a href="https://mega.nz/file/DoZiQLiR#8M9q3UaZyqO9_q6-91laWjO7Zs7cF73zKM0Z6jixCGk" class="play-button flex items-center justify-center bg-primary text-white py-2 !rounded-button whitespace-nowrap">
+<i class="ri-play-fill mr-1"></i> Reproducir
+</a>
+</div>
+</div>
+</div>
+<div class="movie-card rounded-lg shadow-lg bg-gray-800 overflow-hidden">
+<div class="relative h-64">
+<img src="https://pics.filmaffinity.com/gladiator_ii-808387712-mmed.jpg" alt="Gladiator II" class="w-full h-full object-cover object-top">
+<div class="movie-overlay absolute inset-0">
+<h3 class="text-xl font-bold mb-1">Gladiator II</h3>
+<div class="flex items-center mb-1">
+<span class="text-sm mr-2">2024</span>
+<span class="text-xs px-2 py-1 bg-primary !rounded-button">Acción</span>
+</div>
+<div class="flex items-center mb-2">
+<div class="flex mr-2">
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-half-fill text-yellow-400"></i>
+</div>
+<span class="text-sm">8.8</span>
+</div>
+<p class="text-xs text-gray-300 mb-3">El ejército romano dirigido por el general Acacio invade y conquista el reino. Los esclavos son llevados a Ostia, donde Lucio es comprado por el maestro de cuadra Macrinus.</p>
+<a href="https://mega.nz/file/TgZx2TZZ#TJU9V7LfL1BscqfSZo4WP-bl8stuDW2x8s9edwG-57M" class="play-button flex items-center justify-center bg-primary text-white py-2 !rounded-button whitespace-nowrap">
+<i class="ri-play-fill mr-1"></i> Reproducir
+</a>
+</div>
+</div>
+</div>
+<div class="movie-card rounded-lg shadow-lg bg-gray-800 overflow-hidden">
+<div class="relative h-64">
+<img src="https://pics.filmaffinity.com/den_of_thieves_2_pantera-897881741-mmed.jpg" alt="Juego de ladrones 2: Pantera" class="w-full h-full object-cover object-top">
+<div class="movie-overlay absolute inset-0">
+<h3 class="text-xl font-bold mb-1">Juego de ladrones 2: Pantera</h3>
+<div class="flex items-center mb-1">
+<span class="text-sm mr-2">2025</span>
+<span class="text-xs px-2 py-1 bg-primary !rounded-button">Acción</span>
+</div>
+<div class="flex items-center mb-2">
+<div class="flex mr-2">
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-line text-yellow-400"></i>
+</div>
+<span class="text-sm">8.1</span>
+</div>
+<p class="text-xs text-gray-300 mb-3">Donnie se alía con la mafia Pantera para cometer el mayor robo de diamantes jamás visto. </p>
+<a href="https://mega.nz/file/y0ZBVAbY#W1SlC7IXG64UwbK-V6TmKZnU5J6F0bd9y7f0d9OAPsw" class="play-button flex items-center justify-center bg-primary text-white py-2 !rounded-button whitespace-nowrap">
+<i class="ri-play-fill mr-1"></i> Reproducir
+</a>
+</div>
+</div>
+</div>
+<div class="movie-card rounded-lg shadow-lg bg-gray-800 overflow-hidden">
+<div class="relative h-64">
+<img src="https://pics.filmaffinity.com/the_descent-396561570-mmed.jpg" alt="El descenso" class="w-full h-full object-cover object-top">
+<div class="movie-overlay absolute inset-0">
+<h3 class="text-xl font-bold mb-1">El descenso</h3>
+<div class="flex items-center mb-1">
+<span class="text-sm mr-2">2005</span>
+<span class="text-xs px-2 py-1 bg-primary !rounded-button">Terror. Aventuras</span>
+</div>
+<div class="flex items-center mb-2">
+<div class="flex mr-2">
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-half-fill text-yellow-400"></i>
+<i class="ri-star-line text-yellow-400"></i>
+</div>
+<span class="text-sm">7.6</span>
+</div>
+<p class="text-xs text-gray-300 mb-3">Seis amigas se reúnen en una remota montaña para emprender una expedición espeleológica. El grupo queda atrapado en una cueva cuando una roca se desprende y bloquea la salida.</p>
+<a href="https://mega.nz/file/64ZkwJiD#fbmMn2Zueoll9HlcJ29pFP49_OweUtHZnvJ0F88z508" class="play-button flex items-center justify-center bg-primary text-white py-2 !rounded-button whitespace-nowrap">
+<i class="ri-play-fill mr-1"></i> Reproducir
+</a>
+</div>
+</div>
+</div>
+<div class="movie-card rounded-lg shadow-lg bg-gray-800 overflow-hidden">
+<div class="relative h-64">
+<img src="https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F4LiZlaqMMd6TQhTUfgLn4VfD5zo.jpg&w=256&q=75" alt="Hermanos" class="w-full h-full object-cover object-top">
+<div class="movie-overlay absolute inset-0">
+<h3 class="text-xl font-bold mb-1">Hermanos</h3>
+<div class="flex items-center mb-1">
+<span class="text-sm mr-2">2025</span>
+<span class="text-xs px-2 py-1 bg-primary !rounded-button">Acción, Comedia, Crimen</span>
+</div>
+<div class="flex items-center mb-2">
+<div class="flex mr-2">
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+</div>
+<span class="text-sm">9.2</span>
+</div>
+<p class="text-xs text-gray-300 mb-3">Dos hermanos gemelos criminales, se embarcan en un peligroso atraco por carretera. Enfrentando problemas legales, tiroteos y drama familiar.</p>
+<a href="https://mega.nz/file/a0QEWbCY#FekrCi2lNI2Qbr3NfH-dlYka27ARGv7m5LlXIrp05-k" class="play-button flex items-center justify-center bg-primary text-white py-2 !rounded-button whitespace-nowrap">
+<i class="ri-play-fill mr-1"></i> Reproducir
+</a>
+</div>
+</div>
+</div>
+<div class="movie-card rounded-lg shadow-lg bg-gray-800 overflow-hidden">
+<div class="relative h-64">
+<img src="https://pics.filmaffinity.com/the_alto_knights-694682403-mmed.jpg" alt="The Alto Knights: Mafia y poder" class="w-full h-full object-cover object-top">
+<div class="movie-overlay absolute inset-0">
+<h3 class="text-xl font-bold mb-1">The Alto Knights: Mafia y poder</h3>
+<div class="flex items-center mb-1">
+<span class="text-sm mr-2">2025</span>
+<span class="text-xs px-2 py-1 bg-primary !rounded-button">Drama. Intriga </span>
+</div>
+<div class="flex items-center mb-2">
+<div class="flex mr-2">
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-half-fill text-yellow-400"></i>
+</div>
+<span class="text-sm">8.9</span>
+</div>
+<p class="text-xs text-gray-300 mb-3">La película sigue a dos de los jefes del crimen organizado más notorios de Nueva York, Frank Costello (De Niro) y Vito Genovese (De Niro)</p>
+<a href="https://mega.nz/file/T4gwjCIA#2yOQ5sfd2IgT_4kpJqlj7o530BtEwv3-96vtrLD1F_U" class="play-button flex items-center justify-center bg-primary text-white py-2 !rounded-button whitespace-nowrap">
+<i class="ri-play-fill mr-1"></i> Reproducir
+</a>
+</div>
+</div>
+</div>
+<div class="movie-card rounded-lg shadow-lg bg-gray-800 overflow-hidden">
+<div class="relative h-64">
+<img src="https://cuevana.biz/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Fak7VgAaI94K6CbbFuL22xIBJtyE.jpg&w=256&q=75" alt="Better Man: La Historia de Robbie Williams" class="w-full h-full object-cover object-top">
+<div class="movie-overlay absolute inset-0">
+<h3 class="text-xl font-bold mb-1">Better Man: La Historia de Robbie Williams</h3>
+<div class="flex items-center mb-1">
+<span class="text-sm mr-2">2025</span>
+<span class="text-xs px-2 py-1 bg-primary !rounded-button">Drama | Biográfico. Música</span>
+</div>
+<div class="flex items-center mb-2">
+<div class="flex mr-2">
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-line text-yellow-400"></i>
+</div>
+<span class="text-sm">8.3</span>
+</div>
+<p class="text-xs text-gray-300 mb-3">La historia de Robbie Williams, las experiencias que lo convirtieron en quien es y los demonios con los que luchó.</p>
+<a href="https://mega.nz/file/H9QgSSQC#rPXB2Du7ykzlz8aIsDNbfffa7kMmcRHfoFplCwdXRUE" class="play-button flex items-center justify-center bg-primary text-white py-2 !rounded-button whitespace-nowrap">
+<i class="ri-play-fill mr-1"></i> Reproducir
+</a>
+</div>
+</div>
+</div>
+
+
+<div class="movie-card rounded-lg shadow-lg bg-gray-800 overflow-hidden">
+<div class="relative h-64">
+<img src="https://images.justwatch.com/poster/241499379/s718/el-gigante-de-hierro.jpg" alt="El gigante de hierro" class="w-full h-full object-cover object-top">
+<div class="movie-overlay absolute inset-0">
+<h3 class="text-xl font-bold mb-1">El gigante de hierro</h3>
+<div class="flex items-center mb-1">
+<span class="text-sm mr-2">1999</span>
+<span class="text-xs px-2 py-1 bg-primary !rounded-button">Animación, Ciencia ficción, Aventura</span>
+</div>
+<div class="flex items-center mb-2">
+<div class="flex mr-2">
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-line text-yellow-400"></i>
+</div>
+<span class="text-sm">8.3</span>
+</div>
+<p class="text-xs text-gray-300 mb-3">Un joven se hace amigo de un robot gigante del espacio exterior que un paranoico agente del gobierno quiere destruir.</p>
+<a href="https://mega.nz/file/XtA2iSzY#NfbS_zLzoEiTg5dhJCrBFwk2BBNLQil0gSbPP4kkdog" class="play-button flex items-center justify-center bg-primary text-white py-2 !rounded-button whitespace-nowrap">
+<i class="ri-play-fill mr-1"></i> Reproducir
+</a>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8 px-6 mt-12 text-center text-sm text-gray-500">
+      <div class="container mx-auto">
+        <p class="text-3xl font-['Pacifico'] text-primary mb-4">RobinCine Premium creado con 💙 por alado64</p>
+        <p>© 2025 RobinCine Premium. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
